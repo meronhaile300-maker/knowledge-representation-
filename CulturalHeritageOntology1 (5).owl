@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#previousOwner">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ProvenanceRecord"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Ceramic">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artifact"/>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MonaLisa">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Painting"/>
+    <hasCreator>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LeonardoDaVinci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist"/>
+      </owl:NamedIndividual>
+    </hasCreator>
+    <displayedIn>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LouvreMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ParisCity"/>
+        <owns rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LouvreCollection"/>
+      </owl:NamedIndividual>
+    </displayedIn>
+    <belongsToCollection>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LouvreCollection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Collection"/>
+      </owl:NamedIndividual>
+    </belongsToCollection>
+    <associatedWithPeriod>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Renaissance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HistoricalPeriod"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Style"/>
+      </owl:NamedIndividual>
+    </associatedWithPeriod>
+    <madeOf>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#OilPaint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Material"/>
+      </owl:NamedIndividual>
+    </madeOf>
+    <hasTitle>Mona Lisa</hasTitle>
+    <inventoryNumber>LOUVRE-001</inventoryNumber>
+    <conditionStatus>Protected</conditionStatus>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ArenaDiVerona">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Monument"/>
+    <locatedIn>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#VeronaCity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#City"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ItalyCountry"/>
+      </owl:NamedIndividual>
+    </locatedIn>
+    <hasTitle>Arena di Verona</hasTitle>
+    <inventoryNumber>VR-MON-001</inventoryNumber>
+    <conditionStatus>Preserved / Active Use</conditionStatus>
+    <hasDescription>Roman amphitheatre used today for open-air opera performances</hasDescription>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#precededBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Style"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Style"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#hasPart">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#restoredBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Conservator"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#displayedIn">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#estimatedValue">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#VirtualExhibition">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Exhibition"/>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#GirlWithAPearlEarring">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Painting"/>
+    <hasCreator>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#JohannesVermeer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist"/>
+      </owl:NamedIndividual>
+    </hasCreator>
+    <displayedIn>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Mauritshuis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+      </owl:NamedIndividual>
+    </displayedIn>
+    <associatedWithPeriod>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#DutchGoldenAge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HistoricalPeriod"/>
+        <precededBy rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HighRenaissance"/>
+      </owl:NamedIndividual>
+    </associatedWithPeriod>
+    <madeOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#OilPaint"/>
+    <hasTitle>Girl with a Pearl Earring</hasTitle>
+    <inventoryNumber>MAURITSHUIS-001</inventoryNumber>
+    <conditionStatus>Protected</conditionStatus>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#owns">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#madeOf">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Material"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#hasProvenance">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ProvenanceRecord"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#digitizationDate">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Textile">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artifact"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#copyrightStatus">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#License"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#references">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#employsTechnique">
+    <rdfs:domain>
+      <owl:Class rdf:nodeID="Ne34db32030ea4eee998933061dd1f4d3">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+          <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Technique"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#documentedIn">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#hasTitle">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#influencedBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Drawing">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artwork"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#hasLocation">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HeritageSite"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Location"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#donatedBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#AcquisitionEvent"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Donor"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#materialType">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Material"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#manages">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalInstitution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Collection"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Fresco">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artwork"/>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#TheStarryNight">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Painting"/>
+    <hasCreator>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#VincentVanGogh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist"/>
+      </owl:NamedIndividual>
+    </hasCreator>
+    <displayedIn>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MuseumOfModernArt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#NewYorkCity"/>
+        <owns rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MoMACollection"/>
+      </owl:NamedIndividual>
+    </displayedIn>
+    <belongsToCollection>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MoMACollection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Collection"/>
+      </owl:NamedIndividual>
+    </belongsToCollection>
+    <associatedWithPeriod>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#PostImpressionism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HistoricalPeriod"/>
+        <precededBy rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Renaissance"/>
+      </owl:NamedIndividual>
+    </associatedWithPeriod>
+    <madeOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#OilPaint"/>
+    <hasTitle>The Starry Night</hasTitle>
+    <inventoryNumber>MOMA-001</inventoryNumber>
+    <conditionStatus>Stable</conditionStatus>
+  </owl:NamedIndividual>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#weight">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#organizedBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Exhibition"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalInstitution"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#hasStyle">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Style"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Researcher">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#loanStartDate">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LoanEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#width">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#belongsToCollection">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Collection"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#acquiresObject">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#AcquisitionEvent"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#languageCode">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Manuscript"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#hasCreator">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artwork"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ArchaeologicalSite">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HeritageSite"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#acquisitionDate">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#publicationYear">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#creationDate">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#curatedBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Exhibition"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Curator"/>
+  </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#David">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Sculpture"/>
+    <hasCreator>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Michelangelo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist"/>
+        <influencedBy rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LeonardoDaVinci"/>
+      </owl:NamedIndividual>
+    </hasCreator>
+    <displayedIn>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#UffiziGallery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#FlorenceCity"/>
+      </owl:NamedIndividual>
+    </displayedIn>
+    <associatedWithPeriod>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HighRenaissance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HistoricalPeriod"/>
+        <precededBy rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Renaissance"/>
+      </owl:NamedIndividual>
+    </associatedWithPeriod>
+    <madeOf>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Marble">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Material"/>
+      </owl:NamedIndividual>
+    </madeOf>
+    <hasStyle rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Renaissance"/>
+    <hasTitle>David</hasTitle>
+    <inventoryNumber>UFFIZI-001</inventoryNumber>
+    <conditionStatus>Stable</conditionStatus>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#digitizedBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#exhibitsObject">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ExhibitionEvent"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#associatedWithPeriod">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HistoricalPeriod"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#DigitizationEvent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#sponsoredBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Exhibition"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Sponsor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#licensedUnder">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#License"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Coin">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artifact"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Image">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#partOfArchive">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Manuscript"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Archive"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#loanEndDate">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LoanEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#height">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Jewelry">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artifact"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#conditionStatus">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#locatedIn">
+    <rdfs:domain>
+      <owl:Class rdf:nodeID="Nb577164e93d74eb4be84ae9a1acf3be5">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+          <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HeritageSite"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#City"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#inventoryNumber">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#fileFormat">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#loanedTo">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#hasDescription">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#preservedBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalInstitution"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#participatesInEvent">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event"/>
+  </owl:ObjectProperty>
+  <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1">
+    <rdfs:comment>Cultural Heritage and Museum Ontology - Updated Edition. 46 classes, 32 object properties, 18 data properties, 26 individuals. Student: Mian Majid Ali (VR546366), Course: Knowledge Representation, Instructor: Prof. Matteo Cristani.</rdfs:comment>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#restoresObject">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#RestorationEvent"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Photograph">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artwork"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Donor">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#FlorenceCity">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#City"/>
+    <rdfs:seeAlso>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ItalyCountry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Country"/>
+      </owl:NamedIndividual>
+    </rdfs:seeAlso>
+  </owl:NamedIndividual>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Curator">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Painting">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artwork"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#LoanEvent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ProvenanceRecord">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#MediaObject"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artwork">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artist">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HistoricalPeriod"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Location"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Collection"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Monument">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HeritageSite"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#RestorationEvent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Museum">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalInstitution"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ExhibitionEvent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#AcquisitionEvent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Manuscript">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artifact"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Material"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Exhibition"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Style"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#HeritageSite">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#ParisCity">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#City"/>
+  </owl:NamedIndividual>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Sponsor">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Sculpture">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artwork"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#City">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Location"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Conservator">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Agent"/>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#NewYorkCity">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#City"/>
+  </owl:NamedIndividual>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Country">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Location"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Event">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#License">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalInstitution"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Artifact">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#CulturalHeritageObject"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Technique"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/ontologies/CulturalHeritageOntology1#Archive"/>
+</rdf:RDF>
